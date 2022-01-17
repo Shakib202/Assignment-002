@@ -1,0 +1,166 @@
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-icon{
+  font-size: 20px;
+  padding-left: 8%;
+  margin-bottom: 150px;
+}
+
+.flexible-container{
+  display:flex;
+  margin-bottom:100px;
+}
+.half-width{
+  width:100%;
+  padding-left: 8%;
+}
+
+.link-button{
+  text-decoration: none;
+  background-color: hotpink;
+  color:white;
+  font-weight: 700;
+  padding: 10px 40px;
+  border-radius: 25px;
+}
+/* commit */
+.container{
+  background-color: white;
+  width: 1000px;
+  padding: 30px;
+  border-radius: 5px;
+  margin-top: 21px;
+}
+#section-title{
+  font-size: 30px;
+  text-align: center;
+}
+.menu-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+}
+.product{
+
+  width: 300px;
+  margin: 10px;
+  border-radius: 9px;
+  box-shadow: 20px 20px 80px whitesmoke;
+}
+.product img{
+  width: 100%;
+  border-radius: 7px;
+}
+.fa-star{
+  font-size: 12px;
+}
+.fa-star.filled{
+  color: #FFC014;
+}
+.fa-star.empty{
+  color: #AEAEAE;
+}
+.right{
+  text-align: right;
+  font-size: 20px;
+}
+#see-more{
+  text-decoration: none;
+  color: rgb(237, 67, 67);
+}
+#button-link{
+  text-decoration: none;
+  background-color:deeppink;
+  color:white;
+  font-weight: 700;
+  padding: 10px 40px;
+
+}
+
+/* Footer */
+.black{
+  background-color: rgb(47, 40, 40);
+}
+.white{
+  text-align: center;
+  color: white;
+}
+/* phone */
+
+@media (max-width: 688px) {
+  .flexible-container{
+    flex-direction: column;
+  }
+  .half-width{
+    width: 70%;
+  }
+  .flexible-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .phone-img{
+    margin-top: 90px;
+    width: 300px;
+    height: 280px;
+  }
+ 
+  .product{
+    width:300px;
+    margin-left: 350px;
+  }
+  #see-more{
+    margin-right: 20%;
+  }
+ .menu-container{
+  grid-template-columns: repeat(1, 1fr);
+ }
+
+}
+
+/* Tab */
+@media only screen and (min-width:689px) and (max-width:992px){
+  .flexible-container{
+    flex-direction: column;
+  }
+  .top-icon{
+    margin-right: 50%;
+  }
+  #section-title{
+    margin-right: 400px;
+  }
+  .half-width{
+    width: 40%;
+  }
+  .flexible-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .phone-img{
+    margin-top: 90px;
+    width: 350px;
+    height: 280px;
+  }
+  .right{
+    margin-right: 450px;
+  }
+ 
+  .product{
+    width:400px;
+    margin-left: 150px;
+  }
+ .menu-container{
+  grid-template-columns: repeat(1, 1fr);
+ }
+ .black{
+   width: 61%;
+ }
+
+}
